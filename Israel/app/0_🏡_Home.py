@@ -14,7 +14,7 @@ with open(css_file_path) as css:
 st.markdown("# Predictive Modeling for Neighborhood Safety")
 st.markdown("Seth K, Rashid B, and Israel D")
 
-# Frontpage #
+# Home page #
 @st.cache_data # Cached the DataFrame so it only has to load once
 def load_data_head(filepath):
     df = pd.read_csv(filepath)
@@ -23,7 +23,8 @@ df = load_data_head(r'C:\Data Science\chicago-crime-property-analysis\Israel\app
 st.markdown("City of Chicago Crime Database")
 st.dataframe(df)
 
-tab1, tab2, tab3 = st.tabs(["Crime by Neighborhood","Kernel Density Plot","Correlation Heatmap"])
+# Images on the Home page #
+tab1, tab2, tab3 = st.tabs(["Crime by Neighborhood","Kernel Density Plot","Correlation Heatmap"]) # Image tabs
 
 with tab1:
     st.header("Breakdown of crime by neighborhood")
