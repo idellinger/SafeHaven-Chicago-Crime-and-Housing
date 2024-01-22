@@ -6,11 +6,6 @@ import numpy as np
 
 st.set_page_config(page_title="Real eSafe", page_icon = "🏡", initial_sidebar_state="collapsed")
 
-css_file_path = r"C:\Data Science\chicago-crime-property-analysis\Israel\app\style.css"
-
-with open(css_file_path) as css:
-    st.markdown(f'<style>{css.read()}</style>', unsafe_allow_html=True)
-
 st.markdown("# Predictive Modeling for Neighborhood Safety")
 st.markdown("Seth K, Rashid B, and Israel D")
 

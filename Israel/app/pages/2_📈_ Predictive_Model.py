@@ -6,4 +6,4 @@ import numpy as np
 
 st.title("Predictive Model")
 
-model = pickle.load(open('','rb'))
+model = load(open('','rb'))
