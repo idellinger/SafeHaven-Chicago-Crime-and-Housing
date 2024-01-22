@@ -1,0 +1,15 @@
+APP:
+    Dashboard
+        Stats Overview
+        Crime Categories
+        Recent Data
+        Trends
+        Filters
+    Map
+        Interactive Map
+        Heatmap
+        Geo Compare
+    Predictions
+        Prective Insights
+        Interactive Predictions
+        Model Performance Metrics
