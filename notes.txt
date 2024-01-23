@@ -1,15 +1,29 @@
 APP:
-    Dashboard
+    Home:
+        Brief intro?
         Stats Overview
         Crime Categories
         Recent Data
         Trends
         Filters
-    Map
+    Map:
         Interactive Map
         Heatmap
         Geo Compare
-    Predictions
+    Predictions:
         Prective Insights
         Interactive Predictions
         Model Performance Metrics
+
+
+1. Basic Model inputs/GUI
+2. Map?
+3. 
+
+
+dict = {
+name: col,
+name: col,
+}
+
+blank dataframe all 265 feature names user selects put a 1 in the corresponding dataframe

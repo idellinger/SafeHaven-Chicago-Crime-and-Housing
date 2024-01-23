@@ -6,8 +6,7 @@ import numpy as np
 
 st.set_page_config(page_title="Real eSafe", page_icon = "🏡", initial_sidebar_state="collapsed")
 
-st.markdown("# Predictive Modeling for Neighborhood Safety")
-st.markdown("Seth K, Rashid B, and Israel D")
+st.title("Predictive Modeling for Neighborhood Safety")
 
 # Home page #
 @st.cache_data # Cached the DataFrame so it only has to load once
@@ -15,7 +14,7 @@ def load_data_head(filepath):
     df = pd.read_csv(filepath)
     return df
 df = load_data_head(r'C:\Data Science\chicago-crime-property-analysis\Israel\app\resources\data\df_head.csv')
-st.markdown("City of Chicago Crime Database")
+st.header("City of Chicago Crime Database")
 st.dataframe(df)
 
 # Images on the Home page #
