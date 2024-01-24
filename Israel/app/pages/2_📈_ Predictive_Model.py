@@ -41,8 +41,6 @@ year_built_select['YearBuilt'] = np.where(year_built_select['YearBuilt'] ==
 chosen_neighborhood = val5
 
 neighborhood_select['Neighborhood'] = np.where(neighborhood_select['Neighborhood'] == chosen_neighborhood, 1, 0)
-#neighborhood_select['Neighborhood'] = np.where(neighborhood_select['Neighborhood'] == 
-                                               #chosen_neighborhood, chosen_neighborhood, 0)
 
 if st.button("Predict"):
     feature_array = np.concatenate([

@@ -16,14 +16,11 @@ APP:
         Model Performance Metrics
 
 
-1. Basic Model inputs/GUI
-2. Map?
-3. 
+1. Basic Model inputs/GUI X
+2. Map
+3. Fix menu names
+4. New model?
+5. Aesthetic design
 
 
-dict = {
-name: col,
-name: col,
-}
 
-blank dataframe all 265 feature names user selects put a 1 in the corresponding dataframe
