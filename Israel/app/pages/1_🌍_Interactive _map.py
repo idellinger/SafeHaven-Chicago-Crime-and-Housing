@@ -4,6 +4,7 @@ import folium
 import streamlit_folium
 import branca
 import geopandas as gpd
+
 st.title("Interactive Crime Map")
 
 crime_neighborhood_merge_path = (r'C:\Data Science\chicago-crime-property-analysis\Israel\app\resources\data\crime_neighborhood_merge.geojson')
