@@ -4,17 +4,27 @@ from pickle import load
 import matplotlib.pyplot as plt
 import numpy as np
 import joblib
+from streamlit_extras.app_logo import add_logo
 
-st.title("Predictive Model")
+st.set_page_config(page_title="Model - SafeHaven")
 
-model_select = st.toggle('Use alternate Naive Bayes model?')
+developers_markdown = """
+Seth Kulow ([GitHub](https://github.com/Skcodingacademy))\n
+Israel Dellinger ([GitHub](https://github.com/idellinger))\n 
+Rashid Baset ([GitHub](https://github.com/rbaset5))\n
+"""
+def logo():
+    add_logo(r"C:\Data Science\chicago-crime-property-analysis\Israel\app\resources\images\logo.png", height=250)
+logo()
+
+st.sidebar.title("Developers")
+st.sidebar.info(developers_markdown)
+st.image("./resources/images/logo_notext.png")
+st.title("SafeHaven Analytics")
+
 model = joblib.load(r'C:\Data Science\chicago-crime-property-analysis\Israel\app\ridge_modelfinaltest.sav','r')
-model_name = st.empty()
-model_name.title("Ridge Model")
-if model_select:
-        model_name.empty()
-        model = joblib.load(r'C:\Data Science\chicago-crime-property-analysis\Israel\app\nb_modelneb.sav','r')
-        model_name = st.title("Naive Bayes")
+
+st.subheader("Ridge Model", divider = "grey")
 
 NB_file_path = r'C:\Data Science\chicago-crime-property-analysis\Israel\app\neighborhoods.txt'
 year_built_file_path = r'C:\Data Science\chicago-crime-property-analysis\Israel\app\year_built.txt'
@@ -58,6 +68,6 @@ if st.button("Predict"):
 ], axis=1) 
     
     prediction = model.predict(feature_array)
-    st.write("Predicted Crime count is:", prediction)
+    st.write("The predicted number of yearly crimes in the area of a $",int(val4),"property built in",int(val3), "in the", chosen_neighborhood.split('_')[-1].title(),"area is:", int(prediction),".")
 
 

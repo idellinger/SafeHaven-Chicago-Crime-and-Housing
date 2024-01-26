@@ -16,17 +16,15 @@ APP:
         Model Performance Metrics
 
 
-1. Basic Model inputs/GUI X
-2. Map X 
-3. Fix menu names X 
-5. Aesthetic design
-6. DEPLOY/HOST
-7. Data by year on map
+0. FORMAT OUTPUT FOR MODEL!!!
+1. Aesthetic design
+2. DEPLOY/HOST
 
 
 WITH MORE TIME:
     - Load times
     - Pick and choose the model
+    - Data by year on map
      
 
 
