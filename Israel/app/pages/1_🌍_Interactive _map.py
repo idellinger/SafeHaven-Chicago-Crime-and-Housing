@@ -5,8 +5,6 @@ import streamlit_folium
 import branca
 import geopandas as gpd
 
-st.title("Interactive Crime Map")
-
 crime_neighborhood_merge_path = (r'C:\Data Science\chicago-crime-property-analysis\Israel\app\resources\data\crime_neighborhood_merge.geojson')
 crime_neighborhood_merge = gpd.read_file(crime_neighborhood_merge_path)
 
@@ -14,7 +12,10 @@ crime_columns = ['Crimes Involving Children', 'Deceptive Practices and Fraud', '
                  'Property Crimes', 'Public Order Crimes', 'Violent Crimes']
 crime_neighborhood_merge['total_crime'] = crime_neighborhood_merge.groupby('community')[crime_columns].transform('sum').sum(axis=1)
 
-colormap = branca.colormap.LinearColormap(vmin=crime_neighborhood_merge['total_crime'].quantile(0.0),vmax=crime_neighborhood_merge['total_crime'].quantile(1),colors=["red", "orange", "lightblue", "green", "darkgreen"],caption="Total Crimes")
+vmin = crime_neighborhood_merge['total_crime'].min()
+vmax = crime_neighborhood_merge['total_crime'].max()
+
+colormap = branca.colormap.LinearColormap(vmin=crime_neighborhood_merge['total_crime'].quantile(0.0),vmax=crime_neighborhood_merge['total_crime'].quantile(1), colors=["lightblue","green","darkgreen","orange", "red"],caption="Total Crimes")
 
 m = folium.Map(location=[41.84469250265398, -87.60914087617894], zoom_start=10)
 
@@ -51,7 +52,6 @@ g = folium.GeoJson(crime_neighborhood_merge,
                    popup=popup).add_to(m)
 
 colormap.add_to(m)
-
-
-streamlit_folium.folium_static(m)
+st.title("Interactive Crime Map")
+streamlit_folium.folium_static(m, width= 1000, height=800)
 

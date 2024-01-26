@@ -7,8 +7,14 @@ import joblib
 
 st.title("Predictive Model")
 
-model = joblib.load(r'C:\Data Science\chicago-crime-property-analysis\Israel\app\nb_modelneb.sav','r')
-st.title("CrimePredict")
+model_select = st.toggle('Use alternate Naive Bayes model?')
+model = joblib.load(r'C:\Data Science\chicago-crime-property-analysis\Israel\app\ridge_modelfinaltest.sav','r')
+model_name = st.empty()
+model_name.title("Ridge Model")
+if model_select:
+        model_name.empty()
+        model = joblib.load(r'C:\Data Science\chicago-crime-property-analysis\Israel\app\nb_modelneb.sav','r')
+        model_name = st.title("Naive Bayes")
 
 NB_file_path = r'C:\Data Science\chicago-crime-property-analysis\Israel\app\neighborhoods.txt'
 year_built_file_path = r'C:\Data Science\chicago-crime-property-analysis\Israel\app\year_built.txt'
@@ -29,8 +35,8 @@ year_built_select = pd.DataFrame({'YearBuilt': year_built_data['YearBuilt']})
 
 val1 = 0
 val2 = 0
-val3 = st.slider("Year the property was built:", min_value= 1800, max_value=2024, step=1)
-val4 = st.slider("Sold price:", min_value = 50000, max_value= 3000000, step=10000, format= '%d')
+val3 = st.slider("Year the property was built:", min_value= 1700, max_value=2023, step=1)
+val4 = st.slider("Sold price:", min_value = 50000, max_value= 2000000, step=10000)
 val5 = st.selectbox("Neighborhood:",neighborhoods,format_func=lambda x: x.split('_')[-1].title())
 
 chosen_year_built = val3

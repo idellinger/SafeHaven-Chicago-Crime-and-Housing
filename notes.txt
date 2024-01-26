@@ -18,14 +18,16 @@ APP:
 
 1. Basic Model inputs/GUI X
 2. Map X 
-3. Fix menu names 
-4. Caching
+3. Fix menu names X 
 5. Aesthetic design
 6. DEPLOY/HOST
 7. Data by year on map
-8. 
+
 
 WITH MORE TIME:
     - Load times
     - Pick and choose the model
      
+
+
+
