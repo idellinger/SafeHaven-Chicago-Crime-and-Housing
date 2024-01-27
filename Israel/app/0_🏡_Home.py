@@ -23,7 +23,7 @@ st.sidebar.title("Developers")
 st.sidebar.info(developers_markdown)
 st.image("./resources/images/logo_notext.png")
 st.title("SafeHaven Analytics")
-st.subheader("A predictive model for neighborhood safety", divider="grey")
+st.subheader("A predictive model for housing analysis", divider="grey")
 
 # Home page #
 @st.cache_data # Cached the DataFrame so it only has to load once
@@ -35,7 +35,7 @@ df_house = load_data_head(r"C:\Data Science\chicago-crime-property-analysis\Isra
 df_crime = load_data_head(r"C:\Data Science\chicago-crime-property-analysis\Israel\app\resources\data\CrimeData_Chicago.csv")
 
 intro_markdown = """
-Using publicly accessible data from the City of Chicago and Zillow (via HomeHarvest), we developed a machine learning model to demonstrate the relationships between neighborhoods, housing, and crime.
+Using publicly accessible data from the City of Chicago and Realtor.com (via HomeHarvest), we developed a machine learning model to demonstrate the relationships between neighborhoods, housing, and crime.
 """
 st.write(intro_markdown)
 
