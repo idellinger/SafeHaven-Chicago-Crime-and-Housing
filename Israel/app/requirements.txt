@@ -1,0 +1,12 @@
+streamlit
+pandas 
+sqlite3
+matplotlib
+numpy
+seaborn
+pickle
+folium
+streamlit_folium
+branca
+geopandas
+streamlit_extras.app_logo

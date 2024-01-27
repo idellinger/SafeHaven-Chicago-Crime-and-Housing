@@ -1,27 +1,9 @@
-APP:
-    Home:
-        Brief intro?
-        Stats Overview
-        Crime Categories
-        Recent Data
-        Trends
-        Filters
-    Map:
-        Interactive Map
-        Heatmap
-        Geo Compare
-    Predictions:
-        Prective Insights
-        Interactive Predictions
-        Model Performance Metrics
+1. DEPLOY/HOST
+2. CLEAN GITHUB
 
 
-0. FORMAT OUTPUT FOR MODEL!!!
-1. Aesthetic design
-2. DEPLOY/HOST
 
-
-WITH MORE TIME:
+Roadmap:
     - Load times
     - Pick and choose the model
     - Data by year on map

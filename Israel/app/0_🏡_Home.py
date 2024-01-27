@@ -1,13 +1,8 @@
 import streamlit as st
 import pandas as pd
-from pickle import load
-import matplotlib.pyplot as plt
-import numpy as np
 from streamlit_extras.app_logo import add_logo
-from PIL import Image
 
 st.set_page_config(page_title="Home - SafeHaven", layout = "wide", page_icon = "🏡", initial_sidebar_state="collapsed")
-
 
 developers_markdown = """
 Seth Kulow ([GitHub](https://github.com/Skcodingacademy))\n

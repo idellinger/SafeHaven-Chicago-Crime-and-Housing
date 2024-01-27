@@ -1,6 +1,4 @@
 import streamlit as st
-from pickle import load
-import pandas as pd
 import folium
 import streamlit_folium
 import branca
