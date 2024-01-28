@@ -1,6 +1,7 @@
 ![logo_notext](https://github.com/idellinger/chicago-crime-property-analysis/assets/51415637/31d3e280-7a86-4ee3-9501-748d3991a3dc)
 
 # SafeHaven Analytics
+
 ## Seth Kulow, Israel Dellinger, and Rashid Baset
 
 
