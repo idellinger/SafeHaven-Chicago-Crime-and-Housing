@@ -9,4 +9,4 @@ branca
 geopandas
 streamlit_extras
 joblib
-sklearn
+scikit-learn
