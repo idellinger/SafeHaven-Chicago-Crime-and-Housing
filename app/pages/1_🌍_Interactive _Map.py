@@ -14,7 +14,7 @@ Israel Dellinger ([GitHub](https://github.com/idellinger))\n
 Rashid Baset ([GitHub](https://github.com/rbaset5))\n
 """
 def logo():
-    add_logo(r"C:\Data Science\chicago-crime-property-analysis\Israel\app\resources\images\logo.png", height=250)
+    add_logo("./resources/images/logo.png", height=250)
 logo()
 
 st.sidebar.title("Developers")
@@ -25,7 +25,7 @@ st.title("SafeHaven Analytics")
 
 st.subheader("Neighborhood Crime Map (2023 Data)", divider = "grey")
 
-crime_neighborhood_merge_path = (r'C:\Data Science\chicago-crime-property-analysis\Israel\app\resources\data\crime_neighborhood_merge.geojson')
+crime_neighborhood_merge_path = ("./resources/data/crime_neighborhood_merge.geojson")
 crime_neighborhood_merge = gpd.read_file(crime_neighborhood_merge_path)
 
 crime_columns = ['Crimes Involving Children', 'Deceptive Practices and Fraud', 'Drug-Related Crimes',

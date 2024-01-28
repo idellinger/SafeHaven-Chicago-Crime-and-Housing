@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from streamlit_extras.app_logo import add_logo
 
-st.set_page_config(page_title="Home - SafeHaven", layout = "wide", page_icon = "🏡", initial_sidebar_state="collapsed")
+st.set_page_config(page_title="Home - SafeHaven", layout = "wide", page_icon = "🏡", initial_sidebar_state="expanded")
 
 developers_markdown = """
 Seth Kulow ([GitHub](https://github.com/Skcodingacademy))\n
@@ -11,7 +11,7 @@ Rashid Baset ([GitHub](https://github.com/rbaset5))\n
 """
 
 def logo():
-    add_logo(r"C:\Data Science\chicago-crime-property-analysis\Israel\app\resources\images\logo.png", height=250)
+    add_logo("./resources/images/logo.png", height=250)
 logo()
 
 st.sidebar.title("Developers")
@@ -26,8 +26,8 @@ def load_data_head(filepath):
     df = pd.read_csv(filepath)
     df = df.head()
     return df
-df_house = load_data_head(r"C:\Data Science\chicago-crime-property-analysis\Israel\app\resources\data\HomeHarvest_Chicago.csv")
-df_crime = load_data_head(r"C:\Data Science\chicago-crime-property-analysis\Israel\app\resources\data\CrimeData_Chicago.csv")
+df_house = load_data_head("./resources/data/HomeHarvest_Chicago.csv")
+df_crime = load_data_head("./resources/data/CrimeData_Chicago.csv")
 
 intro_markdown = """
 Using publicly accessible data from the City of Chicago and Realtor.com (via HomeHarvest), we developed a machine learning model to demonstrate the relationships between neighborhoods, housing, and crime.
