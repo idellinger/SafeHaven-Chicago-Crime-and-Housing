@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project aims to analyze crime and property data in Chicago to identify patterns and insights that can help in understanding the relationship between crime rates and property values. The project involved extensive data wrangling, feature engineering, exploratory data analysis, and modeling.
+This project aims to analyze crime and property data in Chicago to identify patterns and insights that can help in understanding the relationship between crime rates and property values. The project involved extensive data wrangling, feature engineering, exploratory data analysis, modeling and building a streamlit app.
 
 ## Team Members
 
