@@ -64,7 +64,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn flask
 
 1\. Clone the repository
 
-   ```sh
+```sh
 
 git clone https://github.com/your-repo/chicago-crime-property-analysis.git
 
@@ -74,7 +74,7 @@ cd chicago-crime-property-analysis
 
 2\. Start Jupyter Notebook
 
- ```sh
+```sh
 
 jupyter notebook
 
@@ -82,11 +82,12 @@ jupyter notebook
 
 3\. Open and run the notebooks in the following order:
 
-    -   `1_data-wrangling.ipynb`
-    -   `2_Feature_Engineering.ipynb`
-    -   `3_EDA.ipynb`
-    -   `CrimeCountModelfinal.ipynb`
-    -   `4_Chicago-Crime-Property-Analysis.ipynb`
+- `1_data-wrangling.ipynb`
+- `2_Feature_Engineering.ipynb`
+- `3_EDA.ipynb`
+-  4_Chicago-Crime-Property-Analysis.ipynb`
+- `/modeling/CrimeCountModelfinal.ipynb`
+   
 
 4\. To run the web application showcasing the project results, navigate to the directory containing 0_🏡_Home.py and execute the following command:
 
@@ -104,6 +105,6 @@ You can access the application via https://safe-haven.onrender.com/.
 
 Our analysis revealed several key insights, including:
 
--   Certain neighborhoods with higher crime rates tend to have lower property values.
--   Temporal patterns in crime rates can inform property investment decisions.
--   The predictive models developed can help city officials and real estate investors in making data-driven decisions.
+- Certain neighborhoods with higher crime rates tend to have lower property values.
+- Temporal patterns in crime rates can inform property investment decisions.
+- The predictive models developed can help city officials and real estate investors in making data-driven decisions.
